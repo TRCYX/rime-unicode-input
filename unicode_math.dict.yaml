@@ -4,7 +4,7 @@ version: "0.1"
 sort: original
 ...
 
-\	\\\
+\	\\
 α	\a
 β	\b
 χ	\c
@@ -766,7 +766,7 @@ sort: original
 ∢	\sphericalangle
 §	\section
 ↘	\searrow
-\\	\setminus
+\	\setminus
 ϻ	\san
 ϡ	\sampi
 ∣	\shortmid
