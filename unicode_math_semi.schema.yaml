@@ -2,13 +2,13 @@
 # encoding: utf-8
 
 schema:
-  schema_id: unicode_math
-  name: Unicode 数学符号
+  schema_id: unicode_math_semi
+  name: Unicode 数学符号（;）
   version: "0.1.3"
   author:
     - 余泰来
   description: |
-    用 \ 开始的命令输入 Unicode 数学符号
+    用 ; 开始的命令输入 Unicode 数学符号
 
 engine:
   processors:
@@ -25,11 +25,11 @@ engine:
 
 speller:
   alphabet: "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
-  initials: "\\"
+  initials: ";"
   auto_select: true
 
 translator:
-  dictionary: unicode_math
+  dictionary: unicode_math_semi
   enable_completion: true
   enable_sentence: false
   enable_user_dict: false

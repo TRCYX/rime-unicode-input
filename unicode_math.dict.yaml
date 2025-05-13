@@ -1,6 +1,6 @@
 ---
-name: "unicode_math"
-version: "0.1"
+name: unicode_math
+version: "0.1.3"
 sort: original
 ...
 
