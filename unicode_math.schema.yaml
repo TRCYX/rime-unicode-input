@@ -4,7 +4,7 @@
 schema:
   schema_id: unicode_math
   name: Unicode 数学符号
-  version: "0.1.1"
+  version: "0.1.2"
   author:
     - 余泰来
   description: |
@@ -37,4 +37,4 @@ translator:
     - xform/^~//
 
 key_binder:
-  import_preset: default
+  bindings: {}
