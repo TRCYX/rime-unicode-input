@@ -22,6 +22,20 @@
 - [unicode_math.schema.yaml](./unicode_math.schema.yaml) 中 `speller.initials` 一项要求命令均以反斜杠 `\` 开始。`@` 和 `;` 开始的版本类似。
 - 不要以空格替换分隔输入结果和命令的 <code>Tab</code>。
 
+## 可能的用法
+
+在 $\LaTeX$ 中，启用命令以 `;` 开始的版本。在 preamble 中引入相关支持 Unicode 数学输入的宏包，如下面两者之一：
+```LaTeX
+\usepackage{unicode-math} % 仅支持 Unicode 引擎，如 XeLaTeX 或 LuaLaTeX
+\usepackage{unicode-math-input} % 也支持 pdfLaTeX
+```
+
+对于符号在上述宏包之外的情况，或需要调整某个符号的生成的具体命令，可以这么做：
+```LaTeX
+\usepackage{newunicodechar}
+\newunicodechar{▷}{\vartriangleright} % 给出单个字符和替换的内容
+```
+
 ## 开源许可
 
 本项目与命令列表来源 Lean4 VSCode 扩展均遵循 [Apache 2.0](./LICENSE) 许可证。
